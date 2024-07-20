@@ -29,5 +29,10 @@ public class Wait extends BaseClass{
 	{
 		Wait.visibilityOfElement(wb).sendKeys(value);
 	}
+	
+	public static boolean isDisplayed(WebElement wb)
+	{
+		return Wait.visibilityOfElement(wb).isDisplayed();
+	}
 
 }
